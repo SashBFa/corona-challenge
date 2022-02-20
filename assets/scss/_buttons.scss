@@ -1,14 +1,28 @@
 .butt{
-    background: $colbutt;
+    background: $colButt;
     text-transform: uppercase;
     @include fontS(1.3);
     text-decoration: none;
     color: $colWhite;
+    text-shadow: $shadWhite;
     padding: 1rem 1.5rem;
     border-radius: 5rem;
     cursor: pointer;
     text-align: center;
     font-weight: 500;
     border: 0;
-    text-shadow: $shadred;
+}
+@media screen and (min-width: 767px){
+    .butt{
+        &--medium{ 
+            @include fontS(1);
+            padding: .8rem 1rem;
+        }
+    }
+}
+@media screen and (min-width: 1024px){
+
+}
+@media screen and (min-width: 1440px){
+
 }

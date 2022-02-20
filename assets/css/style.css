@@ -5,17 +5,24 @@
   font-size: 1.3rem;
   text-decoration: none;
   color: #FFF;
+  text-shadow: 0.05rem 0.05rem 0.1rem #7D8491;
   padding: 1rem 1.5rem;
   border-radius: 5rem;
   cursor: pointer;
   text-align: center;
   font-weight: 500;
   border: 0;
-  text-shadow: 0.05rem 0.05rem 0.1rem #7D8491;
 }
 
+@media screen and (min-width: 767px) {
+  .butt--medium {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+}
 .nav {
   position: absolute;
+  z-index: 1;
   top: 3rem;
   left: 3rem;
   width: calc(100% - 6rem);
@@ -34,8 +41,9 @@
 }
 .nav__box {
   position: absolute;
-  width: 100%;
+  width: 0rem;
   top: 5rem;
+  right: 0;
   list-style: none;
   display: grid;
   background: #FFF;
@@ -45,14 +53,15 @@
   transition: 1s ease;
   box-shadow: 0.05rem 0.05rem 0.1rem #7D8491;
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(-150%);
 }
 .nav__item {
   text-decoration: none;
   font-size: 1.5rem;
   color: #F5305A;
   font-weight: 500;
-  text-shadow: 0.05rem 0.05rem 0.1rem #7D8491;
+  text-shadow: 0.05rem 0.05rem 0.1rem #303B4F;
+  cursor: pointer;
 }
 .nav__branch {
   text-align: center;
@@ -86,9 +95,49 @@
 }
 .toggle__on .nav__box {
   opacity: 1;
+  width: 100%;
   transform: translateX(0);
 }
 
+@media screen and (min-width: 767px) {
+  .nav__logo {
+    margin-top: 0;
+  }
+  .nav__box {
+    position: relative;
+    top: 0;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    background: transparent;
+    padding: 0rem;
+    box-shadow: none;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .nav__item {
+    font-size: 1rem;
+    color: #FFF;
+    text-shadow: 0.05rem 0.05rem 0.1rem #7D8491;
+  }
+  .nav__item:hover {
+    color: #F5305A;
+    text-shadow: 0.05rem 0.05rem 0.1rem #303B4F;
+  }
+
+  .toggle {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav__box {
+    width: 60%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -98,16 +147,33 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   height: 100vh;
 }
 
 .container {
-  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
   font-family: "Poppins", sans-serif;
 }
 
+@media screen and (min-width: 767px) {
+  * {
+    font-size: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  * {
+    font-size: 90%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  * {
+    font-size: 100%;
+  }
+}
 .header {
   background: url(./../images/header-banner.jpg) no-repeat center/cover;
   height: 100vh;
@@ -118,10 +184,11 @@ body {
   justify-content: center;
   align-items: flex-start;
   align-content: stretch;
+  position: relative;
 }
 .header__image {
   position: absolute;
-  width: 80%;
+  width: 25rem;
   right: 3rem;
   bottom: 0;
 }
@@ -130,26 +197,44 @@ body {
   color: #FFF;
   text-shadow: 0.05rem 0.05rem 0.1rem #7D8491;
   letter-spacing: 0.1rem;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: 800;
-  line-height: 2.8rem;
 }
 .header__p {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 .header__p--large {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: 800;
 }
 .header__p--mini {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 200;
 }
 .header__butt {
-  margin: 3rem;
+  margin: 2rem 3rem;
+}
+
+@media screen and (min-width: 767px) {
+  .header {
+    padding-bottom: 3rem;
+  }
+  .header__image {
+    width: 35rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 4rem 0 0 5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 4rem 0 0 25rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

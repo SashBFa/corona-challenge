@@ -9,11 +9,29 @@
     scroll-behavior: smooth;
 }
 body{
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     height: 100vh;
 }
 .container{
-    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
     font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 767px){
+    *{
+        font-size: 80%;
+    }
+}
+@media screen and (min-width: 1024px){
+    *{
+        font-size: 90%;
+    }
+}
+@media screen and (min-width: 1440px){
+    *{
+        font-size: 100%;
+    }
 }

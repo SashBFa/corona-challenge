@@ -1,5 +1,6 @@
 .nav{
     position: absolute;
+    z-index: 1;
     top: 3rem;
     left: 3rem;
     width: calc(100% - 6rem);
@@ -12,8 +13,9 @@
     }
     &__box{
         position: absolute;
-        width: 100%;
+        width: 0rem;
         top:5rem;
+        right: 0;
         list-style: none;
         display: grid;
         background: $colWhite;
@@ -23,14 +25,15 @@
         transition: 1s ease;
         box-shadow: $shadWhite;
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(-150%);
     }
     &__item{
         text-decoration: none;
         @include fontS(1.5);
-        color: $colbutt;
+        color: $colNav1;
         font-weight: 500;
-        text-shadow: $shadred;
+        text-shadow: $shadNav1;
+        cursor: pointer;
     }
     &__branch{
         text-align: center;
@@ -62,7 +65,48 @@
     .nav{
         &__box{
             opacity: 1;
+            width: 100%;
             transform: translateX(0);
+        }
+    }
+}
+@media screen and (min-width: 767px){
+    .nav{
+        &__logo{
+            margin-top: 0;
+        }
+        &__box{
+            position: relative;
+            top:0;
+            width: 75%;
+            @include flexRSE;
+            background: transparent;
+            padding: 0rem;
+            box-shadow: none;
+            opacity: 1;
+            transform: translateX(0);
+        }
+        &__item{
+            @include fontS(1);
+            color: $colWhite;
+            text-shadow: $shadWhite;
+            &:hover{
+                color: $colNav1;
+                text-shadow: $shadNav1;
+            }
+        }
+    }
+    .toggle{
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px){
+
+}
+@media screen and (min-width: 1440px){
+    .nav{
+        &__box{
+            width: 60%;
         }
     }
 }
