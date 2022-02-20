@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "sass": "^1.49.8"
+  },
+  "name": "corona-challenge",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./assets/scss/main.scss:./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SashBFa/corona-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SashBFa/corona-challenge/issues"
+  },
+  "homepage": "https://github.com/SashBFa/corona-challenge#readme"
+}

@@ -1,0 +1,35 @@
+.header{
+    background: url(./../images/header-banner.jpg) no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+    @include flexCR;
+    &__image{
+        position: absolute;
+        width: 80%;
+        left:50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+    &__title{
+        color: $colWhite;
+        text-shadow: $shadWhite;
+        letter-spacing: 0.1rem;
+        @include fontS(3);
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    &__p{
+        @extend .header__title;
+        @include fontS(2);
+        font-weight: 600;
+        &--large{
+            @include fontS(3);
+            text-transform: uppercase;
+            font-weight: 800
+        }
+        &--mini{
+            @include fontS(1.4);
+            font-weight: 200
+        }
+    }
+}
