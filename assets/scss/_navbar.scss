@@ -1,3 +1,68 @@
 .nav{
     position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: calc(100% - 6rem);
+    height: 5rem;
+    @include flexRSB;
+    &__logo{
+        margin-top: 1rem;
+        width: 10rem;
+        cursor: pointer;
+    }
+    &__box{
+        position: absolute;
+        width: 100%;
+        top:5rem;
+        list-style: none;
+        display: grid;
+        background: $colWhite;
+        z-index: 1;
+        text-transform: uppercase;
+        padding: 1.5rem;
+        transition: 1s ease;
+        box-shadow: $shadWhite;
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    &__item{
+        text-decoration: none;
+        @include fontS(1.5);
+        color: $colbutt;
+        font-weight: 500;
+        text-shadow: $shadred;
+    }
+    &__branch{
+        text-align: center;
+        height: 4.5rem;
+        @include flexC;
+    }
+}
+.toggle{
+    font-size: 4rem;
+    color: $colWhite;
+    text-shadow: $shadWhite;
+    cursor: pointer;
+    &__open{
+        display: block;
+    }
+    &__close{
+        display: none;
+    }
+}
+.toggle__on{
+    .toggle{
+        &__open{
+            display: none;
+        }
+        &__close{
+            display: block;
+        }
+    }
+    .nav{
+        &__box{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 }

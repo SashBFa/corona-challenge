@@ -16,26 +16,49 @@
 </head>
 <body>
     <div class="container">
-        <nav class="header__nav nav">
-            <img class="nav__logo" src="./assets/images/coronavirus-logo.png" alt="coronavirus_logo">
-                <ul class="nav__box">
-                    <li class="nav__branch"><a class="nav__item" href="#">home</a></li>
-                    <li class="nav__branch"><a class="nav__item" href="#">covid-19</a></li>
-                    <li class="nav__branch"><a class="nav__item" href="#">prevention</a></li>
-                    <li class="nav__branch"><a class="nav__item" href="#">blog</a></li>
-                    <li class="nav__branch"><a class="nav__item" href="#">faq</a></li>
-                    <li class="nav__branch"><a class="nav__item" href="#">contact us</a></li>
-                    <li class="nav__branch"><a class="nav__item header_butt butt" href="#">call a doctor</a></li>
-                </ul>
+        <nav class="container__nav nav">
+            <a href="#"><img class="nav__logo" src="./assets/images/coronavirus-logo.png" alt="coronavirus_logo"></a>
+            <div class="nav__toggle toggle">
+                <i class="fas fa-bars toggle__open"></i>
+                <i class="fas fa-times toggle__close"></i>
+            </div>
+
+            <ul class="nav__box">
+                <li class="nav__branch">
+                    <a class="nav__item" href="#">home</a>
+                </li>
+                <li class="nav__branch">
+                    <a class="nav__item" href="#">covid-19</a>
+                </li>
+                <li class="nav__branch">
+                    <a class="nav__item" href="#">prevention</a>
+                </li>
+                <li class="nav__branch">
+                    <a class="nav__item" href="#">blog</a>
+                </li>
+                <li class="nav__branch">
+                    <a class="nav__item" href="#">faq</a>
+                </li>
+                <li class="nav__branch">
+                    <a class="nav__item" href="#">contact us</a>
+                </li>
+                <li class="nav__branch">
+                    <a class="nav__butt" href="#">
+                        <button class="butt">call a doctor</button>
+                    </a>
+                </li>
+            </ul>
         </nav>
 
         <header class="container__header header">
-            <h1 class="header__title">covid-19</h1>
-            <p class="header__p">basic protective measures<br>
+            <h1 data-aos="zoom-out-right" class="header__title">covid-19</h1>
+            <p data-aos="zoom-out-right" class="header__p">basic protective measures<br>
                 <b class="header__p--large">social distancing</b><br>
                 <b class="header__p--mini">For Emergency Contact (012) 345 6789</b>
             </p>
-            <a href="#" class="header_butt butt">get started now!</a>
+            <a href="#" class="header__butt">
+                <button class="butt">get started now!</button>
+            </a>
             <img class="header__image" src="./assets/images/people.png" alt="coronavirus_people">
         </header>
 
@@ -74,6 +97,7 @@
             
         </footer>
     </div>
+    <script src="./assets/JS/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

@@ -6,30 +6,34 @@
     &__image{
         position: absolute;
         width: 80%;
-        left:50%;
+        right: 3rem;
         bottom: 0;
-        transform: translateX(-50%);
     }
     &__title{
+        margin: 0 3rem;
         color: $colWhite;
         text-shadow: $shadWhite;
         letter-spacing: 0.1rem;
-        @include fontS(3);
+        @include fontS(2.8);
         text-transform: uppercase;
         font-weight: 800;
+        line-height: 2.8rem;
     }
     &__p{
         @extend .header__title;
-        @include fontS(2);
+        @include fontS(1.8);
         font-weight: 600;
         &--large{
-            @include fontS(3);
+            @include fontS(2.8);
             text-transform: uppercase;
-            font-weight: 800
+            font-weight: 800;
         }
         &--mini{
-            @include fontS(1.4);
-            font-weight: 200
+            @include fontS(1);
+            font-weight: 200;
         }
+    }
+    &__butt{
+        margin: 3rem;
     }
 }
