@@ -1,9 +1,8 @@
 .nav{
-    position: absolute;
     z-index: 1;
-    top: 3rem;
-    left: 3rem;
-    width: calc(100% - 6rem);
+    width: 90%;
+    max-width: 50rem;
+    margin: 0 auto;
     height: 5rem;
     @include flexRSB;
     &__logo{
@@ -104,9 +103,5 @@
 
 }
 @media screen and (min-width: 1440px){
-    .nav{
-        &__box{
-            width: 60%;
-        }
-    }
+
 }

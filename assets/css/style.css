@@ -21,11 +21,10 @@
   }
 }
 .nav {
-  position: absolute;
   z-index: 1;
-  top: 3rem;
-  left: 3rem;
-  width: calc(100% - 6rem);
+  width: 90%;
+  max-width: 50rem;
+  margin: 0 auto;
   height: 5rem;
   display: flex;
   flex-direction: row;
@@ -133,11 +132,6 @@
     display: none;
   }
 }
-@media screen and (min-width: 1440px) {
-  .nav__box {
-    width: 60%;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -178,13 +172,27 @@ body {
   background: url(./../images/header-banner.jpg) no-repeat center/cover;
   height: 100vh;
   width: 100%;
+  position: relative;
+}
+.header__highTitle {
+  width: 90%;
+  max-width: 50rem;
+  margin: 0 auto 0 auto;
+  height: calc(100% - 5rem);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
   align-content: stretch;
-  position: relative;
+}
+.header__highTitleBloc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: stretch;
 }
 .header__image {
   position: absolute;
@@ -193,7 +201,6 @@ body {
   bottom: 0;
 }
 .header__title, .header__p {
-  margin: 0 3rem;
   color: #FFF;
   text-shadow: 0.05rem 0.05rem 0.1rem #7D8491;
   letter-spacing: 0.1rem;
@@ -215,40 +222,13 @@ body {
   font-weight: 200;
 }
 .header__butt {
-  margin: 2rem 3rem;
+  margin: 2rem 0;
 }
 
 @media screen and (min-width: 767px) {
-  .header {
-    padding-bottom: 3rem;
-  }
   .header__image {
     width: 35rem;
   }
-}
-@media screen and (min-width: 1024px) {
-  .header {
-    padding: 4rem 0 0 5rem;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .header {
-    padding: 4rem 0 0 25rem;
-  }
-}
-.main {
-  display: grid;
-  width: 100%;
-}
-
-.counter {
-  background: url(./../images/symptoms-bg.png);
-  width: 100%;
-  height: 5rem;
-}
-
-.whatIs {
-  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
