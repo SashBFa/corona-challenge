@@ -14,15 +14,21 @@
 }
 @media screen and (min-width: 767px){
     .butt{
-        &--medium{ 
-            @include fontS(1);
-            padding: .8rem 1rem;
-        }
+        @include fontS(0.9);
+        padding: .8rem .8rem;
+        letter-spacing: 0.05rem;
     }
 }
 @media screen and (min-width: 1024px){
 
 }
 @media screen and (min-width: 1440px){
-
-}
+    .butt{
+        @include fontS(0.8);
+        padding: 1rem 1.2rem;
+        letter-spacing: 0.05rem;
+        &--medium{
+            @include fontS(0.8);
+        }
+    }
+}    

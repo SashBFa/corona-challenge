@@ -1,30 +1,30 @@
 .nav{
     z-index: 1;
     width: 90%;
-    max-width: 50rem;
+    max-width: 55rem;
     margin: 0 auto;
     height: 5rem;
     @include flexRSB;
     &__logo{
         margin-top: 1rem;
-        width: 10rem;
+        width: 9rem;
         cursor: pointer;
     }
     &__box{
         position: absolute;
         width: 0rem;
         top:5rem;
-        right: 0;
+        right: 5%;
         list-style: none;
         display: grid;
-        background: $colWhite;
+        background: $colWhite2;
         z-index: 1;
         text-transform: uppercase;
         padding: 1.5rem;
         transition: 1s ease;
         box-shadow: $shadWhite;
-        opacity: 0;
-        transform: translateX(-150%);
+        visibility: hidden;
+        transform: translateX(-200%);
     }
     &__item{
         text-decoration: none;
@@ -33,11 +33,17 @@
         font-weight: 500;
         text-shadow: $shadNav1;
         cursor: pointer;
+        visibility: hidden;
     }
     &__branch{
         text-align: center;
         height: 4.5rem;
         @include flexC;
+    }
+}
+.butt{
+    &--medium{
+        visibility: hidden;
     }
 }
 .toggle{
@@ -63,36 +69,53 @@
     }
     .nav{
         &__box{
-            opacity: 1;
-            width: 100%;
+            visibility: visible;
+            width: 90%;
             transform: translateX(0);
+        }
+        &__item{
+            visibility: visible;
+        }
+    }
+    .butt{
+        &--medium{
+            visibility: visible;
         }
     }
 }
 @media screen and (min-width: 767px){
     .nav{
+        padding-top: 2rem;
         &__logo{
             margin-top: 0;
         }
         &__box{
             position: relative;
             top:0;
-            width: 75%;
+            width: 70%;
+            right: 0;
             @include flexRSE;
             background: transparent;
             padding: 0rem;
             box-shadow: none;
-            opacity: 1;
+            visibility: visible;
             transform: translateX(0);
         }
         &__item{
-            @include fontS(1);
+            @include fontS(0.9);
             color: $colWhite;
             text-shadow: $shadWhite;
+            visibility: visible;
+
             &:hover{
                 color: $colNav1;
                 text-shadow: $shadNav1;
             }
+        }
+    }
+    .butt{
+        &--medium{
+            visibility: visible;
         }
     }
     .toggle{
@@ -103,5 +126,11 @@
 
 }
 @media screen and (min-width: 1440px){
-
+    .nav{
+        max-width: 75rem;
+        padding-top: 5rem;
+        &__logo{
+            width: 11rem;
+        }
+    }
 }
