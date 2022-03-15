@@ -72,8 +72,9 @@ img {
   height: 3rem;
 }
 .nav__box {
-  height: 33rem;
   position: absolute;
+  font-size: 4rem;
+  padding-bottom: 1.5rem;
   top: 5rem;
   width: calc(100vw - 2rem);
   background-color: rgba(255, 255, 255, 0.5);
@@ -82,15 +83,14 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  padding-bottom: 1.5rem;
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
 .nav__link {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
@@ -154,7 +154,7 @@ img {
   left: 0;
 }
 .header__entete {
-  height: 59%;
+  height: 30rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
