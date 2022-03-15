@@ -747,6 +747,11 @@ img {
   box-shadow: 0.1rem 0.1rem 0 rgba(93, 76, 85, 0.1);
 }
 
+@media screen and (min-width: 767px) {
+  .doctors__art {
+    padding: 4rem;
+  }
+}
 .blog {
   width: 100vw;
   background: url(./../images/latest-blog-bg.png) center/cover;
