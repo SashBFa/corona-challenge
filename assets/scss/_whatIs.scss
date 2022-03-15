@@ -1,0 +1,22 @@
+.whatIs{
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    width: 100vw;
+    max-width: 64rem;
+    &__h2{
+        font-size: 2rem;
+    }
+    &__p{
+        font-size: 1.2rem;
+        font-weight: 300;
+        &--ita{
+            font-style: italic;
+            margin: 0 0 2rem 0;
+        }
+    }
+    &__h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 2rem 0 0.5rem 0;
+    }
+}

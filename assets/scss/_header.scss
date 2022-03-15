@@ -1,117 +1,51 @@
 .header{
-    background: url(./../images/header-banner.jpg) no-repeat center/cover;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    &__highTitle{
-        width: 90%;
-        max-width: 55rem;
-        margin: 0 auto 0 auto;
+    width: 100vw;
+    height: 60rem;
+    background: url(./../images/header-banner.jpg) center/cover;
+    &__section{
+        width: 100vw;
         height: calc(100% - 5rem);
-        @include flexCR;
-        &Bloc{
-        @include flexCR;            
-        }
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 1rem 1rem 0 1rem;
+        @include flexCSB;
     }
-    &__image{
+    &__box{
+        position: relative;
+        width: 100%;
+    }
+    &__img{
         position: absolute;
-        width: 30rem;
-        right: 0rem;
         bottom: 0;
+        left: 0;
     }
-    &__title{
-        color: $colWhite;
-        text-shadow: $shadWhite;
-        letter-spacing: 0.1rem;
-        @include fontS(2.5);
+    &__entete{
+        height: 59%;
+        @include flexCFE;
         text-transform: uppercase;
-        font-weight: 700;
-        line-height: 2.2rem;
+        color: $white;
+        text-shadow: 0.1rem 0.1rem 0 $shadow;
+        transition: 0.5s ease-in-out;
+        opacity: 1;
+    }
+    &__h1{
+        font-size: 2.8rem;
+        font-weight: 800;
+        height: 3.2rem;
+    }
+    &__h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.25rem;
+        height: 1.5rem;
     }
     &__p{
-        @extend .header__title;
-        @include fontS(1.1);
-        font-weight: 400;
-        line-height: 1.9rem;
-        letter-spacing: 0.3rem;
-        &--large{
-            @include fontS(2.5);
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 0.1rem;
-            line-height: 2.5rem;
-        }
-        &--mini{
-            @include fontS(0.8);
-            font-weight: 400;
-            text-transform: none;
-            letter-spacing: 0rem;
-            line-height: 0.8rem;
-        }
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: none;
+        height: 1.5rem;
     }
     &__butt{
-        margin: 2rem 0;
-    }
-}
-
-@media screen and (min-width: 767px){
-    .header{
-        &__image{
-            width: 35rem;
-        }
-        &__highTitleBloc{
-            padding-bottom: 7rem;
-        }
-    }
-}
-@media screen and (min-width: 1024px){
-    .header{
-        &__image{
-            width: 35rem;
-        }
-        &__highTitleBloc{
-            padding-bottom: 0rem;
-        }
-        &__title{
-            @include fontS(2.2);
-            line-height: 2.2rem;
-        }
-        &__p{
-            @include fontS(1.1);
-            &--large{
-                @include fontS(2.2);
-                line-height: 2.2rem;
-            }
-        }
-    }
-}
-@media screen and (min-width: 1440px){
-    .header{
-        &__highTitle{
-            max-width: 75rem;          
-            }
-        &__image{
-            width: 60rem;
-        }
-        &__title{
-            letter-spacing: 0.1rem;
-            @include fontS(3.4);
-            line-height: 3.4rem;
-        }
-        &__p{
-            @include fontS(1.5);
-            line-height: 1.9rem;
-            letter-spacing: 0.3rem;
-            &--large{
-                @include fontS(3.4);
-                letter-spacing: 0.1rem;
-                line-height: 3.4rem;
-            }
-            &--mini{
-                @include fontS(1.2);
-                letter-spacing: 0rem;
-                line-height: 0.8rem;
-            }
-        }
+        margin-top: 2rem;
     }
 }

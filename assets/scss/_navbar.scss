@@ -1,56 +1,48 @@
 .nav{
-    z-index: 1;
-    width: 90%;
-    max-width: 55rem;
-    margin: 0 auto;
     height: 5rem;
+    width: 100vw;
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 1rem;
     @include flexRSB;
+    color: $white;
+    font-size: 8rem;
     &__logo{
-        margin-top: 1rem;
-        width: 9rem;
-        cursor: pointer;
+        @include flexC;
+        img{
+            height: 3rem; 
+        }
     }
     &__box{
+        height: 33rem;
         position: absolute;
-        width: 0rem;
-        top:5rem;
-        right: 5%;
+        top: 5rem;
+        width: calc(100vw - 2rem);
+        background-color: $white2;
         list-style: none;
-        display: grid;
-        background: $colWhite2;
-        z-index: 1;
+        border-radius: 0.5rem;
+        @include flexCSA;
+        padding-bottom: 1.5rem;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
+    &__link{
+        font-size: 2rem;
         text-transform: uppercase;
-        padding: 1.5rem;
-        transition: 1s ease;
-        box-shadow: $shadWhite;
-        visibility: hidden;
-        transform: translateX(-200%);
-    }
-    &__item{
         text-decoration: none;
-        @include fontS(1.5);
-        color: $colNav1;
         font-weight: 500;
-        text-shadow: $shadNav1;
-        cursor: pointer;
-        visibility: hidden;
-    }
-    &__branch{
-        text-align: center;
-        height: 4.5rem;
-        @include flexC;
-    }
-}
-.butt{
-    &--medium{
-        visibility: hidden;
+        color: $white;
+        text-shadow: 0.1rem 0.1rem 0 $shadow;
+        &--butt{
+            background-color: $pink;
+            background-image: -webkit-linear-gradient( bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15) ), url(../../assets/images/overlay.png);
+            border-radius: 3rem;
+            padding: 0.5rem 2rem;
+            box-shadow: 0.1rem 0.1rem 0 $shadow;
+        }
     }
 }
 .toggle{
-    font-size: 4rem;
-    color: $colWhite;
-    text-shadow: $shadWhite;
-    cursor: pointer;
     &__open{
         display: block;
     }
@@ -69,68 +61,10 @@
     }
     .nav{
         &__box{
-            visibility: visible;
-            width: 90%;
-            transform: translateX(0);
-        }
-        &__item{
-            visibility: visible;
+            opacity: 1;
         }
     }
-    .butt{
-        &--medium{
-            visibility: visible;
-        }
-    }
-}
-@media screen and (min-width: 767px){
-    .nav{
-        padding-top: 2rem;
-        &__logo{
-            margin-top: 0;
-        }
-        &__box{
-            position: relative;
-            top:0;
-            width: 70%;
-            right: 0;
-            @include flexRSE;
-            background: transparent;
-            padding: 0rem;
-            box-shadow: none;
-            visibility: visible;
-            transform: translateX(0);
-        }
-        &__item{
-            @include fontS(0.9);
-            color: $colWhite;
-            text-shadow: $shadWhite;
-            visibility: visible;
-
-            &:hover{
-                color: $colNav1;
-                text-shadow: $shadNav1;
-            }
-        }
-    }
-    .butt{
-        &--medium{
-            visibility: visible;
-        }
-    }
-    .toggle{
-        display: none;
-    }
-}
-@media screen and (min-width: 1024px){
-
-}
-@media screen and (min-width: 1440px){
-    .nav{
-        max-width: 75rem;
-        padding-top: 5rem;
-        &__logo{
-            width: 11rem;
-        }
+    .header__entete{
+        opacity: 0;
     }
 }

@@ -1,0 +1,37 @@
+.doctors{
+    width: 100vw;
+    box-shadow: 0.1rem 0.1rem 1rem $shadow;
+    &__art{
+        width: 100vw;
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+    }
+    &__h2{
+        font-size: 2rem;
+    }
+    &__p{
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: center;
+        &--ita{
+            font-style: italic;
+            margin: 0 0 2rem 0;
+            text-align: left;
+        }
+    }
+    &__h4{
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__headbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    &__box{
+        box-shadow: 0.1rem 0.1rem 0 $shadow2;
+    }
+}

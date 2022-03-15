@@ -1,0 +1,76 @@
+.questions{
+    &__art{
+        width: 100vw;
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+        background: url(./../images/Picture02.png) none;
+    }
+    &__h2{
+        font-size: 2rem;
+    }
+    &__p{
+        font-size: 1.2rem;
+        font-weight: 300;
+        &--ita{
+            font-style: italic;
+            margin: 0 0 2rem 0;
+        }
+    }
+    &__h4{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    &__box{
+        display: grid;
+        margin: 1rem auto;
+        grid-template-columns: 2rem auto;
+        grid-template-areas: 
+        "a b"
+        "c c";
+        .questions{
+            &__toggle{
+                grid-area: a;
+                font-size: 2rem;
+                background-color: $grey2;
+                height: 2.2rem;
+                width: 2.2rem;
+                border-radius: 50%;
+                @include flexC;
+            }
+            &__h4{
+                grid-area: b;
+                margin-left: 1rem;
+            }
+            &__p{
+                grid-area: c;
+                display: none;
+            }
+        }
+    }
+    .toggle2{
+        &__open{
+            display: none;
+        }
+        &__close{
+            display: block;
+        }
+    }
+    .toggle__on{
+        .toggle2{
+            background-color: $pink;
+            &__open{
+                display: block;
+                color: $white;
+            }
+            &__close{
+                display: none;
+            }
+        }
+        .questions{
+            &__p{
+                display: block;
+            }
+        }
+    }
+}

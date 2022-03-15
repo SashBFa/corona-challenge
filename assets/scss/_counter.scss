@@ -1,0 +1,69 @@
+.counter{
+    width: 100vw;
+    background: url(./../images/symptoms-bg.png) center/cover;
+    box-shadow: 0.1rem 0.1rem 1rem $shadow;
+    &__art{
+        width: 100vw;
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+    }
+    &__box{
+        list-style: none;
+        @include flexCFS;
+        font-size: 2.1rem;
+        text-shadow: 0.1rem 0.1rem 0 $shadow2;
+        &--col1{
+            color: $sprite1;
+        }
+        &--col2{
+            color: $sprite2;
+        }
+        &--col3{
+            color: $sprite3;
+        }
+        &--col4{
+            color: $sprite4;
+        }
+    }
+    &__branch{
+        &--num{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+    &__img{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        background: url(./../images/sprite-home.png);
+        transition: 0.5s ease-in-out;
+        &--col1{
+            background-position: 0rem 0rem;
+            &:hover{
+                background-position: 0rem 8rem;
+            }
+        }
+        &--col2{
+            background-position: -7rem 0rem;
+            &:hover{
+                background-position: -7rem 8rem;
+            }
+        }
+        &--col3{
+            background-position: -14rem 0rem;
+            &:hover{
+                background-position: -14rem 8rem;
+            }
+        }
+        &--col4{
+            background-position: -21rem 0rem;
+            &:hover{
+                background-position: -21rem 8rem;
+            }
+        }
+    }
+}

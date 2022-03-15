@@ -1,0 +1,113 @@
+.footer{
+    width: 100vw;
+    background: url(./../images/footer-bg.jpg) center/cover;
+    &__sect{
+        width: 100vw;
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+    }
+    &__art{
+        width: 100%;
+        &--box3{
+            position: relative;
+            margin: 0 auto 7rem auto;
+        }
+    }
+    &__logo{
+        @include flexC;
+        img{
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+    }
+    &__p{
+        font-size: 1.2rem;
+        color: $white;
+        font-weight: 600;
+        i{
+            color: $pink;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+        }
+        &--end{
+            text-align: center;
+            color: $white2;
+            font-weight: 400;
+            b{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                color: $white;
+                font-weight: 400;
+            }
+        }
+    }
+    &__box{
+        width: 100%;
+        font-size: 5rem;
+        margin: 2rem auto;
+        @include flexRC;
+    }
+    &__h4{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $white;
+        margin: 1rem auto;
+    }
+    &__span{
+        @include flexC;
+        border: 0.1rem solid $white3;
+        width: 4rem;
+        height: 4rem;
+        &--col1{
+            color: $ico1;
+        }
+        &--col2{
+            color: $ico2;
+        }
+        &--col3{
+            color: $ico3;
+        }
+        &--col4{
+            color: $ico4;
+        }
+        &--col5{
+            color: $ico5;
+        }
+        &--col6{
+            color: $ico6;
+        }
+    }
+    &__box2{
+        @include flexCSB;
+        margin: 1rem auto;
+    }
+    &__link{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $white;
+        i{
+            font-size: 1.2rem;
+            margin-right: 1rem;
+        }
+    }
+    &__subs{
+        border: 0.1rem solid $grey;
+        background-color: $white;
+        color: $grey;
+        left: 3rem;
+        top:9rem;
+        border-radius: 5rem;
+        height: 3.5rem;
+        position: absolute;
+        width: calc(100% - 6rem);
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+    &__button{
+        position: absolute;
+        top:8.8rem;
+        z-index: 1;
+        right: 3rem;
+    }
+}

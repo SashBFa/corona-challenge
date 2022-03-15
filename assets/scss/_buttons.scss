@@ -1,34 +1,14 @@
 .butt{
-    background: $colButt;
-    text-transform: uppercase;
-    @include fontS(1.3);
-    text-decoration: none;
-    color: $colWhite;
-    text-shadow: $shadWhite;
-    padding: 1rem 1.5rem;
-    border-radius: 5rem;
-    cursor: pointer;
-    text-align: center;
-    font-weight: 500;
     border: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: $white;
+    text-shadow: 0.1rem 0.1rem 0 $shadow;
+    background-color: $pink;
+    background-image: -webkit-linear-gradient( bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15) ), url(../../assets/images/overlay.png);
+    border-radius: 3rem;
+    padding: 1.2rem 2rem;
+    box-shadow: 0.1rem 0.1rem 0 $shadow;
 }
-@media screen and (min-width: 767px){
-    .butt{
-        @include fontS(0.9);
-        padding: .8rem .8rem;
-        letter-spacing: 0.05rem;
-    }
-}
-@media screen and (min-width: 1024px){
-
-}
-@media screen and (min-width: 1440px){
-    .butt{
-        @include fontS(0.8);
-        padding: 1rem 1.2rem;
-        letter-spacing: 0.05rem;
-        &--medium{
-            @include fontS(0.8);
-        }
-    }
-}    

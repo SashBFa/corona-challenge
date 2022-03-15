@@ -11,12 +11,13 @@
 body{
     width: 100%;
     overflow-x: hidden;
-    height: 100vh;
-}
-.container{
     position: relative;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
+    color: $grey;
+}
+img{
+    width: 100%;
 }
 
 @media screen and (min-width: 767px){
@@ -25,11 +26,6 @@ body{
     }
 }
 @media screen and (min-width: 1024px){
-    *{
-        font-size: 90%;
-    }
-}
-@media screen and (min-width: 1440px){
     *{
         font-size: 100%;
     }

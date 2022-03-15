@@ -1,6 +1,3 @@
-@mixin fontS($size:1.8){
-	font-size: #{$size}rem;
-}
 @mixin flexC{
 	display: flex;
 	flex-direction: column;
@@ -17,13 +14,29 @@
 	align-items: center;
 	align-content: center;
 }
-@mixin flexCR{
+@mixin flexCSB{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: flex-start;
 	align-content: stretch;
+}
+@mixin flexCFE{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: flex-start;
+	align-content: stretch;
+}
+@mixin flexCFS{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
 }
 @mixin flexRSE{
 	display: flex;
@@ -38,6 +51,14 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+@mixin flexRC{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
 	align-items: center;
 	align-content: center;
 }

@@ -10,202 +10,466 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="./assets/images/coronavirus-icon.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="shortcut icon" href="./assets/images/coronavirus-icon.png">
     <title>Codigo</title>
 </head>
 <body>
-    <div class="container">
+  <header class="header">
+    <nav class="nav">
+      <a class="nav__logo" href="#">
+        <img src="./assets/images/coronavirus-logo.png" alt="#" >
+      </a>
 
+      <ul class="nav__box">
+        <li class="nav__branch">
+            <a href="#" class="nav__link">home</a>
+        </li>
+        <li class="nav__branch">
+            <a href="#" class="nav__link">covid-19</a>
+        </li>
+        <li class="nav__branch">
+            <a href="#" class="nav__link">prevention</a>
+        </li>
+        <li class="nav__branch">
+            <a href="#" class="nav__link">blog</a>
+        </li>
+        <li class="nav__branch">
+          <a href="#" class="nav__link">faq</a>
+        </li>
+        <li class="nav__branch">
+          <a href="#" class="nav__link">contact us</a>
+        </li>
+        <li class="nav__branch">
+          <a href="#" class="nav__link nav__link--butt">call a doctor</a>
+        </li>
+      </ul>  
 
+      <span class="nav__toggle toggle">
+        <i class="fas fa-bars toggle__open"></i>
+        <i class="fas fa-times toggle__close"></i>
+      </span>
+    </nav>
 
-<!-- Header -->
+    <section class="header__section">
+      <article class="header__entete">
+        <h1 class="header__h1">covid-19</h1>
+        <h2 class="header__h2">basic protective measures</h2>
+        <h1 class="header__h1">social distancing</h1>
+        <p class="header__p">For Emergency Contact (012) 345 6789</p>
+        <a class="header__butt" href="#">
+          <button class="butt header__button">get started now!</button>
+        </a>
+      </article>
 
-        <header class="container__header header">
-<!-- Navigation -->
+      <article class="header__box">
+        <img class="header__img" src="./assets/images/people.png" alt="#">
+      </article>
+    </section>
+  </header>
 
-            <nav class="container__nav nav">
-                <a href="#"><img class="nav__logo" src="./assets/images/coronavirus-logo.png" alt="coronavirus_logo"></a>
-                <div class="nav__toggle toggle">
-                    <i class="fas fa-bars toggle__open"></i>
-                    <i class="fas fa-times toggle__close"></i>
-                </div>
+  <main>
+    <section class="counter">
+      <article class="counter__art">
+        <ul class="counter__box counter__box--col1">
+          <li class="counter__img counter__img--col1"></li>
+          <li class="counter__branch counter__branch--name">Total Confirmed Cases</li>
+          <li class="counter__branch counter__branch--num">882,068</li>
+        </ul>
+        <ul class="counter__box counter__box--col2">
+          <li class="counter__img counter__img--col2"></li>
+          <li class="counter__branch counter__branch--name">Total Deaths</li>
+          <li class="counter__branch counter__branch--num">37,384</li>
+        </ul>
+        <ul class="counter__box counter__box--col3">
+          <li class="counter__img counter__img--col3"></li>
+          <li class="counter__branch counter__branch--name">Recovered</li>
+          <li class="counter__branch counter__branch--num">185,067</li>
+        </ul>
+        <ul class="counter__box counter__box--col4">
+          <li class="counter__img counter__img--col4"></li>
+          <li class="counter__branch counter__branch--name">Countries</li>
+          <li class="counter__branch counter__branch--num">190+</li>
+        </ul>
+      </article>
+    </section>
 
-                <ul class="nav__box">
-                    <li class="nav__branch">
-                        <a class="nav__item" href="#">home</a>
-                    </li>
-                    <li class="nav__branch">
-                        <a class="nav__item" href="#">covid-19</a>
-                    </li>
-                    <li class="nav__branch">
-                        <a class="nav__item" href="#">prevention</a>
-                    </li>
-                    <li class="nav__branch">
-                        <a class="nav__item" href="#">blog</a>
-                    </li>
-                    <li class="nav__branch">
-                        <a class="nav__item" href="#">faq</a>
-                    </li>
-                    <li class="nav__branch">
-                        <a class="nav__item" href="#">contact us</a>
-                    </li>
-                    <li class="nav__branch">
-                        <a class="nav__butt" href="#">
-                            <button class="butt butt--medium">call a doctor</button>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <section class="header__highTitle">
-                <article class="header__highTitleBloc">
-                    <h1 data-aos="zoom-out-right" class="header__title">covid-19</h1>
-                    <p data-aos="zoom-out-right" class="header__p">basic protective measures<br>
-                        <b class="header__p--large">social distancing</b><br>
-                        <b class="header__p--mini">For Emergency Contact (012) 345 6789</b>
-                    </p>
-                    <a href="#" class="header__butt">
-                        <button class="butt">get started now!</button>
-                    </a>
-                    <img class="header__image" src="./assets/images/people.png" alt="coronavirus_people">
-                </article>
-            </section>
-        </header>
+    <section class="whatIs">
+      <div class="whatIs__img">
+        <img src="./assets/images/covid-19.png" alt="#">
+      </div>
 
-        <main class="main">
-            <section class="main__counter counter">
+      <article class="whatIs__art">
+        <h2 class="whatIs__h2">What is Coronavirus?</h2>
 
-            </section>
+        <p class="whatIs__p whatIs__p--ita">Coronavirus disease (COVID-19) is an infectious disease caused bya newly discovered coronavirus.</p>
+        <p class="whatIs__p">Most people infected with the Covid-19 virus will experience mild to moderate respiratory illness and recotver without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular diease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
 
-            <section class="main__whatIs whatIs">
-                <imgc class="whatIs__image" src="./assets/images/covid-19.png" alt="covid-19">
-                <h2 class="main__h2 whatIs__h2">What is Coronavirus?</h2>
+        <h3 class="whatIs__h3">How Is COVID-19 Diagnosed?</h3>
+        <p class="whatIs__p">Diagnosis may be difficult with only a physical exam because mild cases of COVID-19 may appear similar to the flu or a bad cold. A laboratory test can confirm the diagnosis.</p>
 
-                <i class="main__i whatIs__i">Coronavirus disease (COVID-19) is an infectious disease caused bya newly discovered coronavirus.
-                </i>
-                <p class="main__p whatIs__p">Most people infected with the Covid-19 virus will experience mild to moderate respiratory illness and recotver without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular diease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+        <h3 class="whatIs__h3">How Is COVID-19 Treated?</h3>
+        <p class="whatIs__p">As of now, there is not a specific treatment for the virus. People who become sick from COVID-19 should be treated with supportive measures: those that relieve symptoms. For severe cases, there may be additional options for treatment, including research drugs and therapeutics. </p>
+      </article>
+    </section>
 
-                <h3 class="main__h3 whatIs__h3">How Is COVID-19 Diagnosed?</h3>
+    <section class="symptoms">
+      <article class="symptoms__art">
+        <h2 class="symptoms__h2">Symptoms Of Coronavirus</h2>
+        <p class="symptoms__p symptoms__p--ita">The most common symptoms of COVID-19 are fever, tiredness, and dry cough.</p>
 
-                <p class="main__p whatIs__p">Diagnosis may be difficult with only a physical exam because mild cases of COVID-19 may appear similar to the flu or a bad cold. A laboratory test can confirm the diagnosis.</p>
+        <div class="symptoms__box">
+          <span class="symptoms__img symptoms__img--col1"></span>
+          <h4 class="symptoms__h4">Headache</h4>
+          <p class="symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
+        </div>
 
-                <h3 class="main__h3 whatIs__h3">How Is COVID-19 Treated?</h3>
+        <div class="symptoms__box">
+          <span class="symptoms__img symptoms__img--col2"></span>
+          <h4 class="symptoms__h4">High Fever</h4>
+          <p class="symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
+        </div>
 
-                <p class="main__p whatIs__p">As of now, there is not a specific treatment for the virus. People who become sick from COVID-19 should be treated with supportive measures: those that relieve symptoms. For severe cases, there may be additional options for treatment, including research drugs and therapeutics.</p>
-            </section>
+        <div class="symptoms__box">
+          <span class="symptoms__img symptoms__img--col3"></span>
+          <h4 class="symptoms__h4">Dry Cough</h4>
+          <p class="symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
+        </div>
 
-            <section class="main__symptoms symptoms">
-                <h2 class="main__h2 symptoms__h2">Symptoms Of Coronavirus</h2>
+        <div class="symptoms__box">
+          <span class="symptoms__img symptoms__img--col4"></span>
+          <h4 class="symptoms__h4">Shortness Of Breath</h4>
+          <p class="symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
+        </div>
 
-                <i class="main__i symptoms__i">The most common symptoms of COVID-19 are fever, tiredness, and dry cough.</i>
+        <div class="symptoms__box">
+          <span class="symptoms__img symptoms__img--col5"></span>
+            <h4 class="symptoms__h4">Sore Throat</h4>
+            <p class="symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
+        </div>
 
-                <article class="main__art symptoms__art">
-                    <img class="symptoms__image" src="" alt="">
-                    <h4 class="main__h4 symptoms__h4">Headache</h4>
-                    <p class="main__p symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
-                </article>
+        <div class="symptoms__box">
+          <span class="symptoms__img symptoms__img--col6"></span>
+            <h4 class="symptoms__h4">Aches And Pains</h4>
+            <p class="symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
+        </div>
+      </article>
+    </section>
 
-                <article class="main__art symptoms__art">
-                    <img class="symptoms__image" src="" alt="">
-                    <h4 class="main__h4 symptoms__h4">High Fever</h4>
-                    <p class="main__p symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
-                </article>
+    <section class="howProt">
+      <article class="howProt__art">
+        <h2 class="howProt__h2">How To Protect Yourself</h2>
+        <p class="howProt__p howProt__p--ita">You can protect yourself by washing you hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.</p>
+      
+        <div class="howProt__headbox">
+          <div class="howProt__box howProt__box--left">
+            <span class="howProt__img howProt__img--col1"></span>
+            <h4 class="howProt__h4">Wash Your Hands</h4>
+            <p class="howProt__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
+          </div>
+    
+          <div class="howProt__box howProt__box--left">
+            <span class="howProt__img howProt__img--col2"></span>
+              <h4 class="howProt__h4">Avoid Close Contact</h4>
+              <p class="howProt__p">Minimize close contact with persons who have symptoms of respiratory illness, sush as coughing or sneezing.</p>
+          </div>
+    
+          <div class="howProt__box howProt__box--left">
+            <span class="howProt__img howProt__img--col3"></span>
+              <h4 class="howProt__h4">Wear Mask</h4>
+              <p class="howProt__p">If you are healthy, you only need to wear a mask if you are taking car of a person with suspected 2019-nCov infection.</p>
+          </div>
+    
+          <div class="howProt__box howProt__box--right">
+            <span class="howProt__img howProt__img--col4"></span>
+              <h4 class="howProt__h4">Cover Your Nose & Mouth</h4>
+              <p class="howProt__p">Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze.</p>
+          </div>
+    
+          <div class="howProt__box howProt__box--right">
+            <span class="howProt__img howProt__img--col5"></span>
+              <h4 class="howProt__h4">Maintain Social Distancing</h4>
+              <p class="howProt__p">Maintain at least 1 metre(3 feet) distance between yourself and anymore who is coughing or sneezing.</p>
+          </div>
+    
+          <div class="howProt__box howProt__box--right">
+            <span class="howProt__img howProt__img--col6"></span>
+              <h4 class="howProt__h4">Avoid Touching Your Face</h4>
+              <p class="howProt__p">Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth.</p>
+          </div>
+        </div>
+      </article>
+    </section>
 
-                <article class="main__art symptoms__art">
-                    <img class="symptoms__image" src="" alt="">
-                    <h4 class="main__h4 symptoms__h4">Dry Cough</h4>
-                    <p class="main__p symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
-                </article>
+    <section class="update">
+      <article class="update__art">
+        <div class="update__box update__box--left">
+          <h2 class="update__h2">Covid-19</h2>
+          <h3 class="update__h3">All Live Update</h3>
+        </div>
 
-                <article class="main__art symptoms__art">
-                    <img class="symptoms__image" src="" alt="">
-                    <h4 class="main__h4 symptoms__h4">Shortness Of Breath</h4>
-                    <p class="main__p symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
-                </article>
+        <div class="update__box update__box--right">
+          <input class="update__subs" type="email" placeholder="Enter your email address">
+          <a class="update__butt" href="#">
+            <button class="butt update__button">subscribe</button>
+          </a>
+        </div>
+      </article>
+    </section>
 
-                <article class="main__art symptoms__art">
-                    <img class="symptoms__image" src="" alt="">
-                    <h4 class="main__h4 symptoms__h4">Sore Throat</h4>
-                    <p class="main__p symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
-                </article>
+    <section class="questions">
+      <article class="questions__art">
+        <h2 class="questions__h2">Frequently Asked Questions</h2>
+        <p class="questions__p questions__p--ita">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+        <div class="questions__headbox">
+          <div class="questions__box">
+            <span class="questions__toggle toggle2">
+              <i class="fa-solid fa-angle-down toggle2__open"></i>
+              <i class="fa-solid fa-angle-right toggle2__close"></i>
+            </span>
+            <h4 class="questions__h4">What is novel coronavirus?</h4>
+            <p class="questions__p">On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, 'CO' stands for 'corona,' 'VI' for 'virus,' and 'D' for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV".</p>
+          </div>
 
-                <article class="main__art symptoms__art">
-                    <img class="symptoms__image" src="" alt="">
-                    <h4 class="main__h4 symptoms__h4">Aches And Pains</h4>
-                    <p class="main__p symptoms__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
-                </article>
-            </section>
+          <div class="questions__box">
+            <span class="questions__toggle toggle2">
+              <i class="fa-solid fa-angle-down toggle2__open"></i>
+              <i class="fa-solid fa-angle-right toggle2__close"></i>
+            </span>
+            <h4 class="questions__h4">Why is the disease being called COVID-19?</h4>
+            <p class="questions__p">On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, 'CO' stands for 'corona,' 'VI' for 'virus,' and 'D' for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV".</p>
+          </div>
 
-            <section class="main__howProt howProt">
-                <h2 class="main__h2 howProt__h2">How To Protect Yourself</h2>
+          <div class="questions__box">
+            <span class="questions__toggle toggle2">
+              <i class="fa-solid fa-angle-down toggle2__open"></i>
+              <i class="fa-solid fa-angle-right toggle2__close"></i>
+            </span>
+            <h4 class="questions__h4">How can people help stop stigma related to COVID-19?</h4>
+            <p class="questions__p">On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, 'CO' stands for 'corona,' 'VI' for 'virus,' and 'D' for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV".</p>
+          </div>
 
-                <i class="main__i howProt__i">You can protect yourself by washing you hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.</i>
+          <div class="questions__box">
+            <span class="questions__toggle toggle2">
+              <i class="fa-solid fa-angle-down toggle2__open"></i>
+              <i class="fa-solid fa-angle-right toggle2__close"></i>
+            </span>
+            <h4 class="questions__h4">What is the source of the virus?</h4>
+            <p class="questions__p">On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, 'CO' stands for 'corona,' 'VI' for 'virus,' and 'D' for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV".</p>
+          </div>
 
-                <article class="main__art howProt__art howProt__art--left">
-                    <img class="howProt__image" src="" alt="">
-                    <h4 class="main__h4 howProt__h4">Wash Your Hands</h4>
-                    <p class="main__p howProt__p">Regulary and thoroughly clean your hands with an alcohol-based rub or wash them with soap and water.</p>
-                </article>
+          <div class="questions__box">
+            <span class="questions__toggle toggle2">
+              <i class="fa-solid fa-angle-down toggle2__open"></i>
+              <i class="fa-solid fa-angle-right toggle2__close"></i>
+            </span>
+            <h4 class="questions__h4">How does the virus spread?</h4>
+            <p class="questions__p">On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, 'CO' stands for 'corona,' 'VI' for 'virus,' and 'D' for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV".</p>
+          </div>
 
-                <article class="main__art howProt__art howProt__art--left">
-                    <img class="howProt__image" src="" alt="">
-                    <h4 class="main__h4 howProt__h4">Avoid Close Contact</h4>
-                    <p class="main__p howProt__p">Minimize close contact with persons who have symptoms of respiratory illness, sush as coughing or sneezing.</p>
-                </article>
+          <div class="questions__box">
+            <span class="questions__toggle toggle2">
+              <i class="fa-solid fa-angle-down toggle2__open"></i>
+              <i class="fa-solid fa-angle-right toggle2__close"></i>
+            </span>
+            <h4 class="questions__h4">What is a novel coronavirus?</h4>
+            <p class="questions__p">On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, 'CO' stands for 'corona,' 'VI' for 'virus,' and 'D' for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV".</p>
+          </div>
 
-                <article class="main__art howProt__art howProt__art--left">
-                    <img class="howProt__image" src="" alt="">
-                    <h4 class="main__h4 howProt__h4">Wear Mask</h4>
-                    <p class="main__p howProt__p">If you are healthy, you only need to wear a mask if you are taking car of a person with suspected 2019-nCov infection.</p>
-                </article>
+          <div class="questions__box">
+            <span class="questions__toggle toggle2">
+              <i class="fa-solid fa-angle-down toggle2__open"></i>
+              <i class="fa-solid fa-angle-right toggle2__close"></i>
+            </span>
+            <h4 class="questions__h4">Why is the disease being called COVID-19?</h4>
+            <p class="questions__p">On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, 'CO' stands for 'corona,' 'VI' for 'virus,' and 'D' for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV".</p>
+          </div>
 
-                <article class="main__art howProt__art howProt__art--right">
-                    <img class="howProt__image" src="" alt="">
-                    <h4 class="main__h4 howProt__h4">Cover Your Nose & Mouth</h4>
-                    <p class="main__p howProt__p">Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze.</p>
-                </article>
+          <div class="questions__box">
+            <span class="questions__toggle toggle2">
+              <i class="fa-solid fa-angle-down toggle2__open"></i>
+              <i class="fa-solid fa-angle-right toggle2__close"></i>
+            </span>
+            <h4 class="questions__h4">How can people help stop stigma related to COVID-19?</h4>
+            <p class="questions__p">On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, 'CO' stands for 'corona,' 'VI' for 'virus,' and 'D' for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV".</p>
+          </div>
 
-                <article class="main__art howProt__art howProt__art--right">
-                    <img class="howProt__image" src="" alt="">
-                    <h4 class="main__h4 howProt__h4">Maintain Social Distancing</h4>
-                    <p class="main__p howProt__p">Maintain at least 1 metre(3 feet) distance between yourself and anymore who is coughing or sneezing.</p>
-                </article>
+          <div class="questions__box">
+            <span class="questions__toggle toggle2">
+              <i class="fa-solid fa-angle-down toggle2__open"></i>
+              <i class="fa-solid fa-angle-right toggle2__close"></i>
+            </span>
+            <h4 class="questions__h4">What is the source of the virus?</h4>
+            <p class="questions__p">On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, 'CO' stands for 'corona,' 'VI' for 'virus,' and 'D' for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV".</p>
+          </div>
 
-                <article class="main__art howProt__art howProt__art--right">
-                    <img class="howProt__image" src="" alt="">
-                    <h4 class="main__h4 howProt__h4">Avoid Touching Your Face</h4>
-                    <p class="main__p howProt__p">Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth.</p>
-                </article>
-            </section>
+          <div class="questions__box">
+            <span class="questions__toggle toggle2">
+              <i class="fa-solid fa-angle-down toggle2__open"></i>
+              <i class="fa-solid fa-angle-right toggle2__close"></i>
+            </span>
+            <h4 class="questions__h4">How does the virus spread?</h4>
+            <p class="questions__p">On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, 'CO' stands for 'corona,' 'VI' for 'virus,' and 'D' for disease. Formerly, this disease was referred to as "2019 novel coronavirus" or "2019-nCoV".</p>
+          </div>
+        </div>
+      </article>
+    </section>
 
-            <section class="main__interlude interlude">
+    <section class="doctors">
+      <article class="doctors__art">
+        <h2 class="doctors__h2">Our Specialist Doctors</h2>
+        <p class="doctors__p doctors__p--ita">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+        <div class="doctors__headbox">
+          <div class="doctors__box">
+            <img src="./assets/images/team01.png" alt="#">
+            <h4 class="doctors__h4">anna J.seleb</h4>
+            <p class="doctors__p">Cardiologist</p>
+          </div>
 
-            </section>
+          <div class="doctors__box">
+            <img src="./assets/images/team02.png" alt="#">
+            <h4 class="doctors__h4">robert simmon</h4>
+            <p class="doctors__p">Head Doctor</p>
+          </div>
 
-            <section class="main__interlude interlude">
+          <div class="doctors__box">
+            <img src="./assets/images/team03.png" alt="#">
+            <h4 class="doctors__h4">joseph jordan</h4>
+            <p class="doctors__p">Rehabilitation Therapy</p>
+          </div>
 
-            </section>
+          <div class="doctors__box">
+            <img src="./assets/images/team04.png" alt="#">
+            <h4 class="doctors__h4">sofia parnek</h4>
+            <p class="doctors__p">Chief Doctor</p>
+          </div>
+        </div>
+      </article>
+    </section>
 
-            <section class="main__questions questions">
+    <section class="blog">
+      <article class="blog__art">
+        <h2 class="blog__h2">Latest Blog Posts</h2>
+        <p class="blog__p blog__p--ita">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+        <div class="blog__headbox">
+          <div class="blog__box">
+            <span class="blog__date"><b>07</b> Oct</span>
+            <img src="./assets/images/Picture01.png" alt="#">
+            <h4 class="blog__h4">Wash your hands regularly for 20 seconds</h4>
+            <p class="blog__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo fugit ratione eaque natus provident fugiat quasi repellat.</p>
+            <div class="blog__headboxSpread">
+              <span class="blog__boxSpread blog__boxSpread--col1"><i class="fa-solid fa-comment"></i>37</span>
+              <span class="blog__boxSpread blog__boxSpread--col2">110</span>
+              <span class="blog__boxSpread blog__boxSpread--col3"><i class="fa-solid fa-eye"></i>180</span>
+              <span class="blog__boxSpread blog__boxSpread--col4"><i class="fa-solid fa-share-nodes"></i>SHARE</span>
+            </div>
+          </div>
 
-            </section>
+          <div class="blog__box">
+            <span class="blog__date"><b>07</b> Oct</span>
+            <img src="./assets/images/Picture02.png" alt="#">
+            <h4 class="blog__h4">Protect yourself: advice for the public</h4>
+            <p class="blog__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo fugit ratione eaque natus provident fugiat quasi repellat.</p>
+            <div class="blog__headboxSpread">
+              <span class="blog__boxSpread blog__boxSpread--col1"><i class="fa-solid fa-comment"></i>37</span>
+              <span class="blog__boxSpread blog__boxSpread--col2">110</span>
+              <span class="blog__boxSpread blog__boxSpread--col3"><i class="fa-solid fa-eye"></i>180</span>
+              <span class="blog__boxSpread blog__boxSpread--col4"><i class="fa-solid fa-share-nodes"></i>SHARE</span>
+            </div>
+          </div>
 
-            <section class="main__doctors doctors">
-                    
-            </section>
+          <div class="blog__box">
+            <span class="blog__date"><b>07</b> Oct</span>
+            <img src="./assets/images/Picture03.png" alt="#">
+            <h4 class="blog__h4">One World: Together at home'Global Special</h4>
+            <p class="blog__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo fugit ratione eaque natus provident fugiat quasi repellat.</p>
+            <div class="blog__headboxSpread">
+              <span class="blog__boxSpread blog__boxSpread--col1"><i class="fa-solid fa-comment"></i>37</span>
+              <span class="blog__boxSpread blog__boxSpread--col2">110</span>
+              <span class="blog__boxSpread blog__boxSpread--col3"><i class="fa-solid fa-eye"></i>180</span>
+              <span class="blog__boxSpread blog__boxSpread--col4"><i class="fa-solid fa-share-nodes"></i>SHARE</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
 
-            <section class="main__latest latest">
-                    
-            </section>
-        </main>
+  <footer class="footer">
+    <section class="footer__sect">
+      <article class="footer__art">
+        <a class="footer__logo" href="#">
+          <img src="./assets/images/coronavirus-logo.png" alt="#" >
+        </a>
+        <p class="footer__p"><i class="fa-solid fa-location-arrow footer__p--red"></i>21 King Street, Melbourne, Victoria 3000 Australia</p>
+        <p class="footer__p"><i class="fa-solid fa-envelope footer__p--red"></i></i>Contact Us</p>
+        <p class="footer__p"><i class="fa-solid fa-phone-flip footer__p--red"></i></i>+ 012-345-6789</p>
+        <div class="footer__box">
+          <span class="footer__span footer__span--col1"><i class="fa-brands fa-facebook-f"></i></span>
+          <span class="footer__span footer__span--col2"><i class="fa-brands fa-twitter"></i></span>
+          <span class="footer__span footer__span--col3"><i class="fa-brands fa-google-plus-g"></i></span>
+          <span class="footer__span footer__span--col4"><i class="fa-brands fa-gitkraken"></i></span>
+          <span class="footer__span footer__span--col5"><i class="fa-brands fa-linkedin"></i></span>
+          <span class="footer__span footer__span--col6"><i class="fa-brands fa-youtube"></i></span>
+        </div>
+      </article>
 
-<!-- Footer -->
-
-        <footer class="footer">
-            
-        </footer>
-    </div>
-    <script src="./assets/JS/index.js"></script>
+      <article class="footer__art">
+        <h4 class="footer__h4">Useful Links</h4>
+        <div class="footer__box2">
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> What is COVID-19
+          </a>
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> COVID-19 History
+          </a>
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> Corona Symptoms
+          </a>
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> How to Protect
+          </a>
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> Our Specialist Doctors
+          </a>
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> Donors & Partners
+          </a>
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> Blog
+          </a>
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> FAQs
+          </a>
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> Site Map
+          </a>
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> Privacy Policy
+          </a>
+          <a class="footer__link" href="#">
+            <i class="fa-solid fa-angle-right"></i> Contact Us
+          </a>
+        </div>
+      </article>
+      <article class="footer__art footer__art--box3">
+        <h4 class="footer__h4">Newsletter Subscription</h4>
+        <p class="footer__p">Make sure you don't miss interesting shenanigans - join our newsletter!</p>
+        <div class="footer__sub">
+          <input class="footer__subs" type="email" placeholder="Enter your email address">
+          <a class="footer__butt" href="#">
+            <button class="butt footer__button">subscribe</button>
+          </a>
+        </div>
+      </article>
+      <article class="footer__copy">
+        <p class="footer__p footer__p--end">Copyright © 2020 <b>codigo.</b> All rights reserverd.</p>
+      </article>
+    </section>
+  </footer>
+    <script src="./assets/JS/toggle.js"></script>
+    <script src="./assets/JS/parallax.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
