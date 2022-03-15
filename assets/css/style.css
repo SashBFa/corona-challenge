@@ -14,6 +14,12 @@
   box-shadow: 0.1rem 0.1rem 0 rgba(93, 76, 85, 0.5);
 }
 
+@media screen and (min-width: 767px) {
+  .butt {
+    font-size: 2rem;
+    padding: 2rem 2.5rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;

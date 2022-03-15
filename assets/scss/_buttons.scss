@@ -12,3 +12,13 @@
     padding: 1.2rem 2rem;
     box-shadow: 0.1rem 0.1rem 0 $shadow;
 }
+
+@media screen and (min-width: 767px){
+    .butt{
+        font-size: 2rem;
+        padding: 2rem 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+}
