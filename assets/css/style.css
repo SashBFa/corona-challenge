@@ -704,6 +704,11 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 767px) {
+  .questions__art {
+    padding: 4rem;
+  }
+}
 .doctors {
   width: 100vw;
   box-shadow: 0.1rem 0.1rem 1rem rgba(93, 76, 85, 0.5);
