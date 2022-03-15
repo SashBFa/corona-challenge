@@ -9,14 +9,15 @@
     font-size: 8rem;
     &__logo{
         @include flexC;
+        height: 100%;
         img{
-            height: 3rem; 
+            height: 100%;
         }
     }
     &__box{
         position: absolute;
         font-size: 4rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1.5re;
         top: 5rem;
         width: calc(100vw - 2rem);
         background-color: $white2;
