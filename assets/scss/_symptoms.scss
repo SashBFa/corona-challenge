@@ -78,3 +78,31 @@
         }
     }
 }
+@media screen and (min-width: 767px){
+    .symptoms{
+        &__art{
+            padding:4rem;
+        }
+        &__headbox{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        &__box{
+            @include flexC;
+        }
+        &__img{
+            margin: 0 auto 2rem auto;
+            border: 0.4rem $grey dotted;
+            &--col1{
+                background-position: -0.2rem -13rem;
+                &:hover{
+                    background-position: -0.2rem -28.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+}
