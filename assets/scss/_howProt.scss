@@ -79,3 +79,23 @@
         }
     }
 }
+@media screen and (min-width: 767px){
+    .howProt{
+        &__art{
+            padding: 4rem;
+        }
+        &__headbox{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            background-image: -webkit-linear-gradient( top, 
+            rgba(255, 255, 255, 0.9), 
+            rgba(255, 255, 255, 0.4) ), 
+            url(./../images/protect-bg.png);
+            background-position: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+}

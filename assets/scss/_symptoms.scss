@@ -88,9 +88,6 @@
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
         }
-        &__box{
-            @include flexC;
-        }
         &__img{
             margin: 0 auto 2rem auto;
             border: 0.4rem $grey dotted;

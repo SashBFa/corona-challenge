@@ -464,14 +464,6 @@ img {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
-  .symptoms__box {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
   .symptoms__img {
     margin: 0 auto 2rem auto;
     border: 0.4rem #353434 dotted;
@@ -570,6 +562,18 @@ img {
   background-position: -32.9rem -8.5rem;
 }
 
+@media screen and (min-width: 767px) {
+  .howProt__art {
+    padding: 4rem;
+  }
+  .howProt__headbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)), url(./../images/protect-bg.png);
+    background-position: center;
+  }
+}
 .update {
   width: 100vw;
   background: url(./../images/subscribe-bg.jpg) center/cover;
