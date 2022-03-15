@@ -111,3 +111,23 @@
         right: 3rem;
     }
 }
+@media screen and (min-width: 767px){
+    .footer{
+        &__sect{
+            padding: 4rem;
+        }
+        &__art{
+            &--box3{
+                margin: 5rem auto 10rem auto;
+            }
+        }
+        &__button{
+            font-size: 1rem;
+            padding: 1.5rem 2.5rem;
+            top:8.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+}
