@@ -308,6 +308,39 @@ img {
   background-position: -21rem 8rem;
 }
 
+@media screen and (min-width: 767px) {
+  .counter__art {
+    padding: 4rem;
+    row-gap: 4rem;
+  }
+  .counter__img {
+    background-size: 35rem;
+  }
+  .counter__img--col1 {
+    background-position: -1rem -1rem;
+  }
+  .counter__img--col1:hover {
+    background-position: -1rem -9.4rem;
+  }
+  .counter__img--col2 {
+    background-position: -9rem -1rem;
+  }
+  .counter__img--col2:hover {
+    background-position: -9rem -9.4rem;
+  }
+  .counter__img--col3 {
+    background-position: -17.5rem -1rem;
+  }
+  .counter__img--col3:hover {
+    background-position: -17.5rem -9.4rem;
+  }
+  .counter__img--col4 {
+    background-position: -26.2rem -1rem;
+  }
+  .counter__img--col4:hover {
+    background-position: -26.2rem -9.4rem;
+  }
+}
 .whatIs {
   margin: 0 auto;
   padding: 3rem 1rem;
