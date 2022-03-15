@@ -364,6 +364,11 @@ img {
   margin: 2rem 0 0.5rem 0;
 }
 
+@media screen and (min-width: 767px) {
+  .whatIs {
+    padding: 4rem;
+  }
+}
 .symptoms {
   width: 100vw;
   background: url(./../images/symptoms-bg.png) center/cover;
