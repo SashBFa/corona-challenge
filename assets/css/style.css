@@ -624,6 +624,16 @@ img {
   right: 3rem;
 }
 
+@media screen and (min-width: 767px) {
+  .update__art {
+    padding: 4rem;
+  }
+  .update__button {
+    font-size: 1rem;
+    padding: 1.5rem 2.5rem;
+    top: -0.2rem;
+  }
+}
 .questions__art {
   width: 100vw;
   max-width: 64rem;
