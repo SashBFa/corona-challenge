@@ -154,7 +154,7 @@ img {
   left: 0;
 }
 .header__entete {
-  height: 30rem;
+  height: 50%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -188,6 +188,29 @@ img {
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 767px) {
+  .header {
+    height: 100rem;
+  }
+  .header__section {
+    height: calc(100% - 5rem);
+    padding: 4rem 4rem 0 4rem;
+  }
+  .header__h1 {
+    font-size: 5rem;
+    height: 5.5rem;
+  }
+  .header__h2 {
+    font-size: 2.5rem;
+    height: 2rem;
+  }
+  .header__p {
+    font-size: 2rem;
+  }
+  .header__butt {
+    margin-top: 4rem;
+  }
+}
 .counter {
   width: 100vw;
   background: url(./../images/symptoms-bg.png) center/cover;

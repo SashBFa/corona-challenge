@@ -21,7 +21,7 @@
         left: 0;
     }
     &__entete{
-        height: 30rem;
+        height: 50%;
         @include flexCFE;
         text-transform: uppercase;
         color: $white;
@@ -49,4 +49,32 @@
     &__butt{
         margin-top: 2rem;
     }
+}
+
+@media screen and (min-width: 767px){
+    .header{
+        height: 100rem;
+        &__section{
+            height: calc(100% - 5rem);
+            padding: 4rem 4rem 0 4rem;
+        }
+        &__h1{
+            font-size: 5rem;
+            height: 5.5rem;
+        }
+        &__h2{
+            font-size: 2.5rem;
+            height: 2rem;
+        }
+        &__p{
+            font-size: 2rem;
+        }
+        &__butt{
+            margin-top: 4rem;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px){
 }
