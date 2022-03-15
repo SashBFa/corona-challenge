@@ -2,6 +2,7 @@
     width: 100vw;
     height: 60rem;
     background: url(./../images/header-banner.jpg) center/cover;
+    overflow: hidden;
     &__section{
         width: 100vw;
         height: calc(100% - 5rem);
@@ -26,7 +27,7 @@
         color: $white;
         text-shadow: 0.1rem 0.1rem 0 $shadow;
         transition: 0.5s ease-in-out;
-        opacity: 1;
+        visibility: visible;
     }
     &__h1{
         font-size: 2.8rem;
