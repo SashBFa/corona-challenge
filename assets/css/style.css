@@ -790,7 +790,7 @@ img {
     margin: 0 auto 3rem auto;
     text-align: center;
     grid-area: d;
-    max-width: 50%;
+    max-width: 60%;
   }
   .howProt__h4 {
     font-size: 1.3rem;
@@ -1057,13 +1057,32 @@ img {
     padding: 4rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .questions__art {
+    padding: 5rem 0rem;
+  }
+  .questions__h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .questions__p {
+    font-size: 1rem;
+  }
+  .questions__p--ita {
+    margin: 0 auto 3rem auto;
+    text-align: center;
+    max-width: 60%;
+  }
+  .questions__h4 {
+    font-size: 1.3rem;
+  }
+}
 .doctors {
   width: 100vw;
-  box-shadow: 0.1rem 0.1rem 1rem rgba(93, 76, 85, 0.5);
 }
 .doctors__art {
   width: 100vw;
-  max-width: 64rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 3rem 1rem;
 }
@@ -1074,9 +1093,9 @@ img {
   font-size: 1.2rem;
   font-weight: 300;
   text-align: center;
+  font-style: italic;
 }
 .doctors__p--ita {
-  font-style: italic;
   margin: 0 0 2rem 0;
   text-align: left;
 }
@@ -1098,6 +1117,31 @@ img {
 @media screen and (min-width: 767px) {
   .doctors__art {
     padding: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .doctors__art {
+    padding: 5rem 0rem;
+  }
+  .doctors__h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .doctors__p {
+    font-size: 1rem;
+  }
+  .doctors__p--ita {
+    margin: 0 auto 3rem auto;
+    text-align: center;
+    max-width: 60%;
+  }
+  .doctors__h4 {
+    font-size: 1.3rem;
+  }
+  .doctors__headbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
   }
 }
 .blog {

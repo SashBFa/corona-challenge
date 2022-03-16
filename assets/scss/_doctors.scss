@@ -1,9 +1,8 @@
 .doctors{
     width: 100vw;
-    box-shadow: 0.1rem 0.1rem 1rem $shadow;
     &__art{
         width: 100vw;
-        max-width: 64rem;
+        max-width: 75rem;
         margin: 0 auto;
         padding: 3rem 1rem;
     }
@@ -14,8 +13,8 @@
         font-size: 1.2rem;
         font-weight: 300;
         text-align: center;
+        font-style: italic;
         &--ita{
-            font-style: italic;
             margin: 0 0 2rem 0;
             text-align: left;
         }
@@ -44,4 +43,29 @@
 }
 
 @media screen and (min-width: 1024px){
+    .doctors{
+        &__art{
+            padding:5rem 0rem;
+        }
+        &__h2{
+            font-size: 2rem;
+            text-align: center;
+        }
+        &__p{
+            font-size: 1rem;
+            &--ita{
+                margin: 0 auto 3rem auto;
+                text-align: center;
+                max-width: 60%;
+            }
+        }
+        &__h4{
+            font-size: 1.3rem;
+        }
+        &__headbox{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+    }
 }
