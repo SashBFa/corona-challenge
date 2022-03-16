@@ -4,7 +4,7 @@
     box-shadow: 0.1rem 0.1rem 1rem $shadow;
     &__art{
         width: 100vw;
-        max-width: 64rem;
+        max-width: 75rem;
         margin: 0 auto;
         padding: 3rem 1rem;
         display: grid;
@@ -104,4 +104,42 @@
 }
 
 @media screen and (min-width: 1024px){
+    .counter{
+        &__art{
+            padding: 2rem 0rem;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &__box{
+            font-size: 1.5rem;
+        }
+        &__img{
+            width: 5rem;
+            height: 5rem;
+            background-size: 20rem;
+            &--col1{
+                background-position: -0.35rem -0.4rem;
+                &:hover{
+                    background-position: -0.35rem -5.3rem;
+                }
+            }
+            &--col2{
+                background-position: -5.2rem -0.4rem;
+                &:hover{
+                    background-position: -5.2rem -5.3rem;
+                }
+            }
+            &--col3{
+                background-position: -10rem -0.4rem;
+                &:hover{
+                    background-position: -10rem -5.3rem;
+                }
+            }
+            &--col4{
+                background-position: -14.8rem -0.4rem;
+                &:hover{
+                    background-position: -14.8rem -5.3rem;
+                }
+            }
+        }
+    }
 }

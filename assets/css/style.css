@@ -325,7 +325,7 @@ img {
 }
 .counter__art {
   width: 100vw;
-  max-width: 64rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 3rem 1rem;
   display: grid;
@@ -422,6 +422,44 @@ img {
   }
   .counter__img--col4:hover {
     background-position: -26.2rem -9.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .counter__art {
+    padding: 2rem 0rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .counter__box {
+    font-size: 1.5rem;
+  }
+  .counter__img {
+    width: 5rem;
+    height: 5rem;
+    background-size: 20rem;
+  }
+  .counter__img--col1 {
+    background-position: -0.35rem -0.4rem;
+  }
+  .counter__img--col1:hover {
+    background-position: -0.35rem -5.3rem;
+  }
+  .counter__img--col2 {
+    background-position: -5.2rem -0.4rem;
+  }
+  .counter__img--col2:hover {
+    background-position: -5.2rem -5.3rem;
+  }
+  .counter__img--col3 {
+    background-position: -10rem -0.4rem;
+  }
+  .counter__img--col3:hover {
+    background-position: -10rem -5.3rem;
+  }
+  .counter__img--col4 {
+    background-position: -14.8rem -0.4rem;
+  }
+  .counter__img--col4:hover {
+    background-position: -14.8rem -5.3rem;
   }
 }
 .whatIs {
