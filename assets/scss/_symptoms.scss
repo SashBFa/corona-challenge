@@ -1,10 +1,9 @@
 .symptoms{
     width: 100vw;
     background: url(./../images/symptoms-bg.png) center/cover;
-    box-shadow: 0.1rem 0.1rem 1rem $shadow;
     &__art{
         width: 100vw;
-        max-width: 64rem;
+        max-width: 75rem;
         margin: 0 auto;
         padding:3rem 1rem;
     }
@@ -102,4 +101,69 @@
 }
 
 @media screen and (min-width: 1024px){
+    .symptoms{
+        &__art{
+            padding:5rem 0rem;
+        }
+        &__h2{
+            font-size: 2rem;
+            text-align: center;
+        }
+        &__p{
+            font-size: 1rem;
+            &--ita{
+                margin: 0 0 1rem 0;
+                text-align: center;
+            }
+        }
+        &__h4{
+            font-size: 1.3rem;
+        }
+        &__headbox{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        &__img{
+            margin: 2rem auto;
+            border: 0.25rem $grey dotted;
+            background-size: 25rem;
+            &--col1{
+                background-position: 0.6rem -10rem;
+                &:hover{
+                    background-position: 0.6rem -22.7rem;
+                }
+            }
+            &--col2{
+                background-position: -7.3rem -10rem;
+                &:hover{
+                    background-position: -7.3rem -22.7rem;
+                }
+            }
+            &--col3{
+                background-position: -15.5rem -10rem;
+                &:hover{
+                    background-position: -15.5rem -22.7rem;
+                }
+            }
+            &--col4{
+                background-position: 0.2rem -16.5rem;
+                &:hover{
+                    background-position: 0.2rem -29.4rem;
+                }
+            }
+            &--col5{
+                background-position: -7.7rem -16.5rem;
+                &:hover{
+                    background-position: -7.7rem -29.4rem;
+                }
+            }
+            &--col6{
+                background-position: -15.5rem -16.5rem;
+                &:hover{
+                    background-position: -15.5rem -29.4rem;
+                }
+            }
+        }
+    }
 }
