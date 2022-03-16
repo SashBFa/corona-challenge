@@ -28,6 +28,7 @@
         text-shadow: 0.1rem 0.1rem 0 $shadow;
         transition: 0.5s ease-in-out;
         visibility: visible;
+        z-index: 5;
     }
     &__h1{
         font-size: 2.8rem;

@@ -59,6 +59,7 @@
         border: 0.1rem solid $white3;
         width: 4rem;
         height: 4rem;
+        cursor: pointer;
         &--col1{
             color: $ico1;
         }
@@ -196,7 +197,8 @@
             margin: 0rem auto;
         }
         &__link{
-            font-size: 1rem;
+            font-size: 0.8rem;
+            margin-bottom: 0.8rem;
             i{
                 font-size: 1rem;
                 margin-right: 0.4rem;

@@ -1,7 +1,8 @@
 .questions{
+    position: relative;
     &__art{
         width: 100vw;
-        max-width: 64rem;
+        max-width: 75rem;
         margin: 0 auto;
         padding: 3rem 1rem;
     }
@@ -22,6 +23,7 @@
     }
     &__box{
         display: grid;
+        cursor: pointer;
         margin: 1rem auto;
         grid-template-columns: 2rem auto;
         grid-template-areas: 
@@ -76,9 +78,6 @@
 
 @media screen and (min-width: 767px){
     .questions{
-        background: url(./../images/Picture02.png) none;
-        background-size: auto 100%;
-        background-position: 0 10rem;
         &__art{
             padding: 4rem;
         }
@@ -89,6 +88,47 @@
     .questions{
         &__art{
             padding:5rem 0rem;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top:-5rem;
+                left:-25rem;
+                background: url(./../images/left.png) no-repeat;
+                background-size: 20rem;
+                background-position: top left;
+                width: 100%;
+                height: 110%;
+                z-index: -1;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top:0rem;
+                right:-30rem;
+                background: url(./../images/right.png) no-repeat;
+                background-size: 40rem;
+                background-position: top right;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+        }
+        &__headbox{
+            @include flexCSBW;
+            max-height: 30rem;
+        }
+        &__box{
+            margin: 1.5rem 0;
+            width: 50%;
+            .questions{
+                &__toggle{
+                    font-size: 1rem;
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
         }
         &__h2{
             font-size: 2rem;
@@ -97,13 +137,13 @@
         &__p{
             font-size: 1rem;
             &--ita{
-                margin: 0 auto 3rem auto;
+                margin: 0 auto 5rem auto;
                 text-align: center;
                 max-width: 60%;
             }
         }
         &__h4{
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
     }
 }
