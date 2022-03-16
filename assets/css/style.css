@@ -466,7 +466,7 @@ img {
   margin: 0 auto;
   padding: 3rem 1rem;
   width: 100vw;
-  max-width: 64rem;
+  max-width: 75rem;
 }
 .whatIs__h2 {
   font-size: 2rem;
@@ -488,6 +488,21 @@ img {
 @media screen and (min-width: 767px) {
   .whatIs {
     padding: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .whatIs {
+    padding: 7rem 0rem;
+    display: grid;
+    grid-template-columns: calc(60% - 2rem) 40%;
+    gap: 2rem;
+  }
+  .whatIs__p {
+    font-size: 1rem;
+  }
+  .whatIs__h3 {
+    font-size: 1.2rem;
+    margin: 2rem 0 0 0;
   }
 }
 .symptoms {
