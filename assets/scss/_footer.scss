@@ -3,7 +3,7 @@
     background: url(./../images/footer-bg.jpg) center/cover;
     &__sect{
         width: 100vw;
-        max-width: 64rem;
+        max-width: 75rem;
         margin: 0 auto;
         padding: 3rem 1rem;
     }
@@ -130,4 +130,90 @@
 }
 
 @media screen and (min-width: 1024px){
+    .footer{
+        &__sect{
+            padding:5rem 0rem 3rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            grid-template-areas: 
+            "a b c"
+            "d d d";
+            article{
+                &:nth-child(1){
+                    grid-area: a;
+                }
+                &:nth-child(2){
+                    grid-area: b;
+                }
+                &:nth-child(3){
+                    grid-area: c;
+                }
+                &:nth-child(4){
+                    grid-area: d;
+                }
+            }
+        }
+        &__art{
+            &--box3{
+                position: relative;
+                margin: 0 auto;
+                p{
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    text-align: left;
+                }
+            }
+        }
+        &__logo{
+            display: block;
+        }
+        &__h4{
+            margin-top: 0;
+        }
+        &__p{
+            font-size: 1rem;
+            i{
+                font-size: 1.1rem;
+            }
+            &--end{
+                b{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        &__box{
+            font-size: 1.5rem;
+            @include flexRFS;
+        }
+        &__span{
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+        &__box2{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 0rem auto;
+        }
+        &__link{
+            font-size: 1rem;
+            i{
+                font-size: 1rem;
+                margin-right: 0.4rem;
+            }
+        }
+        &__subs{
+            border: 0.1rem solid $grey;
+            left: 0rem;
+            top:9rem;
+            width: 100%;
+            font-size: 1rem;
+        }
+        &__button{
+            top:9.25rem;
+            right: 0.25rem;
+            padding: 1rem 1.5rem;
+            font-size: 0.8rem;
+        }
+    }
 }
