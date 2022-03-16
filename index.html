@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="shortcut icon" href="./assets/images/coronavirus-icon.png">
+
+    <script src="./assets/JS/api.js"></script>
     <title>Codigo</title>
 </head>
 <body>
@@ -75,22 +77,22 @@
         <ul class="counter__box counter__box--col1">
           <li class="counter__img counter__img--col1"></li>
           <li class="counter__branch counter__branch--name">Total Confirmed Cases</li>
-          <li class="counter__branch counter__branch--num">882,068</li>
+          <li id="api1" class="counter__branch counter__branch--num"></li>
         </ul>
         <ul class="counter__box counter__box--col2">
           <li class="counter__img counter__img--col2"></li>
           <li class="counter__branch counter__branch--name">Total Deaths</li>
-          <li class="counter__branch counter__branch--num">37,384</li>
+          <li id="api2" class="counter__branch counter__branch--num"></li>
         </ul>
         <ul class="counter__box counter__box--col3">
           <li class="counter__img counter__img--col3"></li>
-          <li class="counter__branch counter__branch--name">Recovered</li>
-          <li class="counter__branch counter__branch--num">185,067</li>
+          <li class="counter__branch counter__branch--name">Active</li>
+          <li id="api3" class="counter__branch counter__branch--num"></li>
         </ul>
         <ul class="counter__box counter__box--col4">
           <li class="counter__img counter__img--col4"></li>
           <li class="counter__branch counter__branch--name">Countries</li>
-          <li class="counter__branch counter__branch--num">190+</li>
+          <li id="api4" class="counter__branch counter__branch--num"></li>
         </ul>
       </article>
     </section>
