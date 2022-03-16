@@ -892,7 +892,7 @@ img {
 }
 .update__art {
   width: 100vw;
-  max-width: 64rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 3rem 1rem;
   color: #FFF;
@@ -938,11 +938,44 @@ img {
 @media screen and (min-width: 767px) {
   .update__art {
     padding: 4rem;
+    text-align: left;
   }
   .update__button {
     font-size: 1rem;
     padding: 1.5rem 2.5rem;
     top: -0.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .update__art {
+    padding: 5rem 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .update__h2 {
+    font-size: 2.2rem;
+    height: 2.2rem;
+  }
+  .update__h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+  .update__box--right {
+    position: relative;
+    width: 70%;
+    margin: 0 0 3rem 0;
+  }
+  .update__subs {
+    height: 3rem;
+  }
+  .update__button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    top: 0.1rem;
   }
 }
 .questions__art {

@@ -16,6 +16,6 @@ const simpleParallax = (elem, modifier) => {
 simpleParallax('header',8);
 simpleParallax('counter',8);
 simpleParallax('symptoms',8);
-simpleParallax('update',8);
+// simpleParallax('update',8);
 simpleParallax('blog',8);
 simpleParallax('footer',8);

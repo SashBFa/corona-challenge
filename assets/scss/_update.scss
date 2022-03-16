@@ -4,7 +4,7 @@
     box-shadow: 0.1rem 0.1rem 1rem $shadow;
     &__art{
         width: 100vw;
-        max-width: 64rem;
+        max-width: 75rem;
         margin: 0 auto;
         padding:3rem 1rem;
         color:$white;
@@ -49,6 +49,7 @@
     .update{
         &__art{
             padding:4rem;
+            text-align: left;
         }
         &__button{
             font-size: 1rem;
@@ -59,4 +60,33 @@
 }
 
 @media screen and (min-width: 1024px){
+    .update{
+        &__art{
+            padding:5rem 0rem;
+            @include flexRSB;
+        }
+        &__h2{
+            font-size: 2.2rem;
+            height: 2.2rem;
+        }
+        &__h3{
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+        &__box{
+            &--right{
+                position: relative;
+                width: 70%;
+                margin: 0 0 3rem 0;
+            }
+        }
+        &__subs{
+            height: 3rem;
+        }
+        &__button{
+            font-size: 1rem;
+            padding: 1rem 2rem;
+            top:0.1rem;
+        }
+    }
 }
