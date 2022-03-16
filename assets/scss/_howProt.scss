@@ -2,7 +2,7 @@
     width: 100vw;
     &__art{
         width: 100vw;
-        max-width: 64rem;
+        max-width: 75rem;
         margin: 0 auto;
         padding: 3rem 1rem;
     }
@@ -98,4 +98,122 @@
 }
 
 @media screen and (min-width: 1024px){
+    .howProt{
+        &__art{
+            padding:5rem 0rem;
+        }
+        &__h2{
+            font-size: 2rem;
+            text-align: center;
+        }
+        &__p{
+            font-size: 1rem;
+            grid-area: b;
+            &--ita{
+                margin: 0 auto 3rem auto;
+                text-align: center;
+                grid-area: d;
+                max-width: 50%;
+            }
+        }
+        &__h4{
+            font-size: 1.3rem;
+            grid-area: a;
+        }
+        &__headbox{
+            background: url(./../images/protect-bg.png) no-repeat center;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            "b1 b4"
+            "b2 b5"
+            "b3 b6";
+            column-gap: 30%;
+            row-gap: 3rem;
+        }
+        &__box{
+            display: grid;
+            column-gap: 2rem;
+            row-gap: 0.5rem;
+            &--left{
+                text-align: right;
+                grid-template-areas:
+                "a c"
+                "b c";
+                .howProt__p{
+                    text-align: right;
+                }
+            }
+            &--right{
+                text-align: left;
+                grid-template-areas:
+                "c a"
+                "c b";
+                .howProt__p{
+                    text-align: left;
+                }
+            }
+            &:nth-child(1){
+                grid-area: b1;
+            }
+            &:nth-child(2){
+                grid-area: b2;
+            }
+            &:nth-child(3){
+                grid-area: b3;
+            }
+            &:nth-child(4){
+                grid-area: b4;
+            }
+            &:nth-child(5){
+                grid-area: b5;
+            }
+            &:nth-child(6){
+                grid-area: b6;
+            }
+        }
+        &__img{
+            grid-area: c;
+            margin: 0rem auto;
+            width: 5rem;
+            height: 5rem;
+            background-size: 25rem;
+            &--col1{
+                background-position: 0.2rem 0rem;
+                &:hover{
+                    background-position: 0.2rem -5.3rem;
+                }
+            }
+            &--col2{
+                background-position: -4rem 0rem;
+                &:hover{
+                    background-position: -4rem -5.3rem;
+                }
+            }
+            &--col3{
+                background-position: -8.4rem 0rem;
+                &:hover{
+                    background-position: -8.4rem -5.3rem;
+                }
+            }
+            &--col4{
+                background-position: -12.45rem 0rem;
+                &:hover{
+                    background-position: -12.45rem -5.3rem;
+                }
+            }
+            &--col5{
+                background-position: -16.5rem 0rem;
+                &:hover{
+                    background-position: -16.5rem -5.3rem;
+                }
+            }
+            &--col6{
+                background-position: -20.5rem 0rem;
+                &:hover{
+                    background-position: -20.5rem -5.3rem;
+                }
+            }
+        }
+    }
 }
