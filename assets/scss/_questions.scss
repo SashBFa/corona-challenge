@@ -4,7 +4,6 @@
         max-width: 64rem;
         margin: 0 auto;
         padding: 3rem 1rem;
-        background: url(./../images/Picture02.png) none;
     }
     &__h2{
         font-size: 2rem;
@@ -77,6 +76,9 @@
 
 @media screen and (min-width: 767px){
     .questions{
+        background: url(./../images/Picture02.png) none;
+        background-size: auto 100%;
+        background-position: 0 10rem;
         &__art{
             padding: 4rem;
         }

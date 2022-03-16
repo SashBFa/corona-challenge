@@ -6,7 +6,7 @@
     &__section{
         width: 100vw;
         height: calc(100% - 5rem);
-        max-width: 64rem;
+        max-width: 75rem;
         margin: 0 auto;
         padding: 1rem 1rem 0 1rem;
         @include flexCSB;
@@ -77,4 +77,36 @@
 
 
 @media screen and (min-width: 1024px){
+    .header{
+        height: 100vh;
+        &__section{
+            padding: 0;
+        }
+        &__box{
+            position: relative;
+            width: 50vw;
+        }
+        &__img{
+            position: absolute;
+            bottom: 0;
+            left: 60%;
+        }
+        &__entete{
+            height: 65%;
+        }
+        &__h1{
+            font-size: 3.5rem;
+            height: 4rem;
+        }
+        &__h2{
+            font-size: 1.8rem;
+            height: 1.5rem;
+        }
+        &__p{
+            font-size: 1.4rem;
+        }
+        &__butt{
+            margin-top: 2rem;
+        }
+    }
 }
